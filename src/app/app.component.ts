@@ -3,8 +3,12 @@ import {Component} from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <ngx-charts-bar-vertical-stacked
-      [results]="data"></ngx-charts-bar-vertical-stacked>
+      <ngx-charts-bar-vertical-stacked
+              [results]="data"
+              [animations]="false"
+              [xAxis]="true"
+              [yAxis]="true"
+              [legend]="true"></ngx-charts-bar-vertical-stacked>
   `
 })
 export class AppComponent {
